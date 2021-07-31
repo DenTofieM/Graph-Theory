@@ -9,10 +9,12 @@ vertices and m is the number of edges.
 The algorithm takes as input an "unweighted graph" and the id of the source vertex s.
 The input graph can be "directed" or "undirected", it does not matter to the algorithm.
 */
+
 #define GRng 1000                            /// Define Graph Size as GRng.
 bool visited[GRng];                          /// visited variable hold an boolean value, node are traversed or not
 ll dist[GRng],way[GRng];                     /// dist variable hold distance from source to any node and way variable hold previous source
 vector<ll>G[GRng];                           /// Create your graph as G vector.
+
 void BFS(ll sr)
 {
     queue<ll>Q;
