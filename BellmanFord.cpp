@@ -1,3 +1,15 @@
+/*
+Suppose that we are given a weighted directed graph  with  vertices and  edges, 
+and some specified vertex . You want to find the length of shortest paths from 
+vertex  to every other vertex.
+
+Unlike the Dijkstra algorithm, this algorithm can also be applied to graphs 
+containing negative weight edges . However, if the graph contains a negative 
+cycle, then, clearly, the shortest path to some vertices may not exist (due to the 
+fact that the weight of the shortest path must be equal to minus infinity); 
+however, this algorithm can be modified to signal the presence of a cycle of 
+negative weight, or even deduce this cycle.
+*/
 ///######################### Bellman-Ford ############################
 struct Edge
 {
